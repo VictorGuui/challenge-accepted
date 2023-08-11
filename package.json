@@ -1,0 +1,32 @@
+{
+  "name": "challenge-accepted",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <a href=\"http://www.climatempo.com.br\">\r       <img src=\"http://i.imgur.com/Q9lCAMF.png\" alt=\"Climatempo\" width=\"300px\"/>\r   </a>\r </p>",
+  "main": "index.js",
+  "start": "nodemon index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon my_file.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorGuui/challenge-accepted.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorGuui/challenge-accepted/issues"
+  },
+  "homepage": "https://github.com/VictorGuui/challenge-accepted#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "bootstrap-icons": "^1.10.5",
+    "ejs": "^3.1.9",
+    "elasticsearch": "^16.7.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
