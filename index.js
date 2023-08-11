@@ -1,8 +1,3 @@
-/*
-    Arquivo: ./index.js
-    Função: Iniciar o servidor web
-*/
-
 const porta = 8080;
 const express = require("express");
 
@@ -21,6 +16,10 @@ servidor.get("/", function (req, res) {
   res.render("index"); // carrega ./views/index.html
 });
 
+servidor.get("/about", function (req, res) {
+  res.render("about"); // carrega ./views/about.html
+});
+
 app.get("/locales", (req, res) => {
   res.send(locales);
 });
@@ -29,4 +28,6 @@ app.get("/locales/:id", (req, res) => {
   res.send(locales[req.params.id]);
 });
 
-servidor.listen(porta);
+servidor.listen(porta, () => {
+  console.log(`Server is running on port ${porta}`);
+});
